@@ -1,4 +1,4 @@
-# WEBOS-RU-KIT — тихий домашний экран и торренты прямо на телевизоре LG (webOS 4.x, root)
+# ОЧАГ (ochag-webos) — тихий домашний экран и торрент-стек на телевизоре LG (webOS 4.x, root)
 
 > **Серия «Матчасть»** — ответ на «на LG webOS ничего нельзя, только Android TV».
 > Второй проект серии — **[ТАКТ](https://github.com/Bezooom/takt-rt)** (детерминированное ядро реального времени).
@@ -57,7 +57,7 @@ Input Hook — кнопку. Пользователь остаётся с дес
 Требуется: root на ТВ (Homebrew Channel), SSH-доступ на `9922`, на компьютере `ssh`, `curl`, `node`.
 
 ```bash
-git clone https://github.com/Bezooom/webos-ru-kit && cd webos-ru-kit
+git clone https://github.com/Bezooom/ochag-webos && cd ochag-webos
 export TV=192.168.1.103 KEY=~/.ssh/lgtv_webos
 
 make check                  # синтаксис + shellcheck, без телевизора
@@ -85,6 +85,8 @@ make verify                 # матрица приёмки по живому Т
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | как связаны лаунчер, перехват кнопки, торрент-демон и плеер; порядок init.d |
 | [docs/TRAPS.md](docs/TRAPS.md) | 10 грабель webOS 4.x с командами воспроизведения |
 | [docs/VERIFICATION.md](docs/VERIFICATION.md) | стенд, сырые выводы, хронология приёмки |
+| [docs/RU-MEDIA.md](docs/RU-MEDIA.md) | id приложений RU-медиа и что из них оказалось мусором |
+| [docs/SOURCES.md](docs/SOURCES.md) | **все первоисточники**: какой проект поставлен, что взято, лицензия |
 
 ## Честные ограничения
 
@@ -96,6 +98,6 @@ make verify                 # матрица приёмки по живому Т
 
 ## Лицензии
 
-Скрипты кита — MIT (© 2026 Pavel Naumov). Всё устанавливаемое живёт под своими лицензиями:
-Hearth (MIT), LG Input Hook, OMP (GPL-3.0), TorrServer (GPL-3.0). Бинарники не распространяются —
-только ссылки на релизы и их sha256.
+Скрипты кита — MIT (© 2026 Pavel Naumov). Бинарники не распространяются: только ссылки на релизы
+и их sha256. Полный список первоисточников, того, что взято из каждого, и лицензий —
+[docs/SOURCES.md](docs/SOURCES.md).

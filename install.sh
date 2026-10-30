@@ -1,5 +1,5 @@
 #!/bin/sh
-# webos-ru-kit — установка лаунчера, торрент-стека и RU-медиа на root-нутый LG webOS 4.x.
+# ochag-webos — установка лаунчера, торрент-стека и RU-медиа на root-нутый LG webOS 4.x.
 #   TV=192.168.1.103 KEY=~/.ssh/lgtv_webos ./install.sh hearth|torrserver|omp|youtube|verify|all
 # Идемпотентно: повторный запуск ничего не ломает.
 set -e

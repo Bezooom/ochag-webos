@@ -1,4 +1,4 @@
-# webos-ru-kit — лаунчер, торрент-стек и RU-медиа на root-нутый LG webOS 4.x
+# ochag-webos — лаунчер, торрент-стек и RU-медиа на root-нутый LG webOS 4.x
 TV   ?= 192.168.1.103
 KEY  ?= $(HOME)/.ssh/lgtv_webos
 ENV  := TV=$(TV) KEY=$(KEY)
