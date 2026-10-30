@@ -91,7 +91,7 @@ $ TV=<TV> make verify
 == torrserver:  MatriX.142.2
 ```
 
-Два дефекта нашлись именно на этом прогоне и исправлены (см. TRAPS §11–12): `luna-send-pub`
+Два дефекта нашлись именно на этом прогоне и исправлены (см. FIRMWARE-POSTMORTEM §5): `luna-send-pub`
 без TTY молчит, а `getForegroundAppInfo` для `prisoner` закрыт — читаем через root-exec.
 
 ## Что не проверено
