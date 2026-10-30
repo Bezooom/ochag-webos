@@ -1,0 +1,8 @@
+#!/bin/sh
+# Hearth при включении ТВ: ждём appMgr и открываем лаунчер. @APP@ подставляет install_hook.
+( i=0
+  while [ $i -lt 10 ]; do
+    sleep 12; i=$((i+1))
+    luna-send-pub -n 1 luna://com.webos.applicationManager/launch '{"id":"@APP@"}' 2>/dev/null | grep -q true && break
+  done ) >/dev/null 2>&1 &
+exit 0

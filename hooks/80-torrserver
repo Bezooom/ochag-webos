@@ -1,0 +1,6 @@
+#!/bin/sh
+# TorrServer MatriX как init.d-хук. Ставится tools/torrserver-headless.sh install.
+D=@TS_DIR@
+[ -x "$D/TorrServer" ] || exit 0
+( cd "$D" && setsid ./TorrServer --port @TS_PORT@ --path "$D" >>"$D/torrserver.log" 2>&1 & )
+exit 0

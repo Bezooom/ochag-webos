@@ -1,0 +1,12 @@
+#!/bin/sh
+# Страховка кнопки Home: как только LG Home выходит на передний план — открываем наш лаунчер.
+# Input Hook перехватывает саму кнопку; этот сторож закрывает промахи (пульт, прошивка, ребут). @APP@
+( while true; do
+    fg=$(luna-send -a webosbrew -n 1 luna://com.webos.applicationManager/getForegroundAppInfo '{}' 2>/dev/null)
+    case "$fg" in
+      *'"appId":"com.webos.app.home"'*)
+        luna-send -a webosbrew -n 1 luna://com.webos.applicationManager/launch '{"id":"@APP@"}' >/dev/null 2>&1 ;;
+    esac
+    sleep 2
+  done ) >/dev/null 2>&1 &
+exit 0
