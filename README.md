@@ -12,8 +12,8 @@
 ![webOS](https://img.shields.io/badge/webOS-4.x%20%7C%20root-brightgreen)
 ![Hearth](https://img.shields.io/badge/Launcher-Hearth-purple)
 ![TorrServer](https://img.shields.io/badge/Torrents-TorrServer%20%3A8090-orange)
-![tests](https://img.shields.io/badge/contract%20tests-13%2F13%20PASS-success)
-![license](https://img.shields.io/badge/license-MIT-yellow)
+[![CI](https://github.com/Bezooom/ochag-webos/actions/workflows/ci.yml/badge.svg)](https://github.com/Bezooom/ochag-webos/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 
 ---
 
