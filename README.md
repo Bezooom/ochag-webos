@@ -1,4 +1,50 @@
-# ОЧАГ (ochag-webos) — тихий домашний экран и торрент-стек на телевизоре LG под webOS 4.x
+<a id="readme-top"></a>
+<!-- best-readme-template -->
+<div align="center">
+
+<h1 align="center">ОЧАГ (ochag-webos) — тихий домашний экран и торрент-стек на телевизоре LG под webOS 4.x</h1>
+
+<p align="center">
+  Тихий домашний экран, TorrServer демоном на :8090 и плеер OMP на root-нутом LG webOS 4.x — плюс 12 грабель прошивки, которых нет в апстримах.
+  <br />
+  <br />
+  <a href="https://github.com/Bezooom/ochag-webos/tree/HEAD/docs"><strong>Документация »</strong></a> · <a href="https://github.com/Bezooom/ochag-webos/issues/new?labels=bug">Сообщить об ошибке</a> · <a href="https://github.com/Bezooom/ochag-webos/issues/new?labels=enhancement">Предложить улучшение</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Bezooom/ochag-webos/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Bezooom/ochag-webos/ci.yml?style=for-the-badge&label=CI&logo=githubactions&logoColor=white" alt="CI" /></a>
+  <a href="https://github.com/Bezooom/ochag-webos/blob/HEAD/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License" /></a>
+  <a href="https://github.com/Bezooom/ochag-webos/stargazers"><img src="https://img.shields.io/github/stars/Bezooom/ochag-webos?style=for-the-badge" alt="Stars" /></a>
+  <a href="https://github.com/Bezooom/ochag-webos/commits"><img src="https://img.shields.io/github/last-commit/Bezooom/ochag-webos?style=for-the-badge" alt="Last commit" /></a>
+  <a href="https://github.com/Bezooom/ochag-webos/issues"><img src="https://img.shields.io/github/issues/Bezooom/ochag-webos?style=for-the-badge" alt="Issues" /></a>
+</p>
+
+</div>
+
+<details open>
+<summary><b>📑 Содержание</b></summary>
+
+- [📖 О проекте](#-о-проекте)
+- [🖥️ Что получается на телевизоре](#-что-получается-на-телевизоре)
+- [🧩 Как это устроено](#-как-это-устроено)
+- [🔬 Грабли, которых нет в апстримах](#-грабли-которых-нет-в-апстримах)
+- [📂 Структура репозитория](#-структура-репозитория)
+- [🧱 Технологии (Built With)](#-технологии-built-with)
+- [🚀 Быстрый старт](#-быстрый-старт)
+- [🎛️ Что остаётся человеку](#-что-остаётся-человеку)
+- [📺 RU-медиа: id приложений](#-ru-медиа-id-приложений)
+- [⚖️ Юридическая чистота и источники](#-юридическая-чистота-и-источники)
+- [Ограничения (честно)](#ограничения-честно)
+- [🗺️ Дорожная карта](#-дорожная-карта)
+- [🤝 Участие в разработке](#-участие-в-разработке)
+- [Лицензия](#лицензия)
+- [🌍 English summary](#-english-summary)
+- [📬 Контакты](#-контакты)
+- [🙏 Благодарности](#-благодарности)
+
+</details>
+
+## 📖 О проекте
 
 > **Root-нутый LG: вместо заводских баннеров и «рекомендаций» — часы, погода и ряд своих приложений;
 > вместо приставки — TorrServer прямо на панели и плеер OMP по его каталогу.**
@@ -110,6 +156,16 @@ ochag-webos/
 ```
 
 ---
+
+## 🧱 Технологии (Built With)
+
+<p>
+<img src="https://img.shields.io/badge/POSIX%20sh--4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="POSIX sh" />
+<img src="https://img.shields.io/badge/webOS-4.x-A50034?style=for-the-badge&logo=lg&logoColor=white" alt="webOS" />
+<img src="https://img.shields.io/badge/Homebrew%20Channel-webosbrew-333333?style=for-the-badge" alt="Homebrew Channel" />
+<img src="https://img.shields.io/badge/TorrServer-MatriX-F28C28?style=for-the-badge" alt="TorrServer" />
+<img src="https://img.shields.io/badge/Make--427819?style=for-the-badge&logo=gnu&logoColor=white" alt="Make" />
+</p>
 
 ## 🚀 Быстрый старт
 
@@ -225,7 +281,44 @@ $ make test
 - Кит не скачивает ничего из p2p: он поднимает сервер и плеер, содержимое — решение пользователя.
 - Автоматизации двух галочек в Hearth и адреса в OMP нет: их API наружу не публикуют.
 
+## 🗺️ Дорожная карта
+
+- [ ] Первый релиз
+- [ ] Фото экрана телевизора в README
+
+Полный список задач и идей — в [issues](https://github.com/Bezooom/ochag-webos/issues).
+
+## 🤝 Участие в разработке
+
+Вклад в проект приветствуется. Если есть идея, как сделать лучше, откройте issue или pull request:
+
+1. Сделайте форк репозитория
+2. Создайте ветку (`git checkout -b feature/my-idea`)
+3. Сделайте коммит (`git commit -m 'feat: my idea'`)
+4. Отправьте ветку (`git push origin feature/my-idea`)
+5. Откройте pull request
+
 ## Лицензия
 
 MIT © 2026 Pavel Naumov. Товарные знаки LG, webOS, Hearth, OMP, TorrServer принадлежат их владельцам;
 проект не связан с LG Electronics.
+
+## 🌍 English summary
+
+Kit for a rooted LG webOS 4.x TV: a quiet Hearth home launcher bound to the Home key, TorrServer as a daemon on :8090, the OMP player, RU streaming app ids, and init.d hooks — all idempotent. Includes a post-mortem of 12 firmware pitfalls. 13 contract tests run without a TV (ssh is faked) in GitHub Actions.
+
+## 📬 Контакты
+
+**Павел Наумов** (Bezooom) — [naumovai.ru](https://naumovai.ru) · [X @Bezooooom](https://x.com/Bezooooom) · naumov122@gmail.com
+
+Проект: [https://github.com/Bezooom/ochag-webos](https://github.com/Bezooom/ochag-webos)
+
+## 🙏 Благодарности
+
+- [webOS Homebrew](https://www.webosbrew.org) и Homebrew Channel
+- [TorrServer](https://github.com/YouROK/TorrServer)
+- Лаунчер Hearth и плеер OMP — авторы указаны в разделе об источниках
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [Shields.io](https://shields.io)
+
+<p align="right">(<a href="#readme-top">наверх</a>)</p>
